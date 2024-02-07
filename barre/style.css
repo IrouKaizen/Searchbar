@@ -1,0 +1,99 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;500;600&display=swap");
+/*=============== VARIABLES CSS ===============*/
+:root {
+  --primary-color: #041dfa;
+  --decent-color: #cedafd;
+  --accent-color: #fff;
+  --text-color: gray;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+    background-color: gray;
+}
+.search-bar{
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    min-width: 700px;
+    background-color: #fff;
+}
+.dropdown{
+    position: relative;
+    width: 280px;
+    border-radius: 50px;
+    border: 1px solid #fff;
+    background-color: #041dfa;
+    box-shadow: gray;
+    cursor: pointer;
+}
+.dropdown-text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #fff;
+    padding: 1rem 1.5rem;
+}
+.dropdown-list{
+    position: absolute;
+    top: 4rem;
+    left: 0;
+    width: 100%;
+    max-height: 0;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: #fff;
+    transition: max-height 0.5s;
+}
+#list.show{
+    max-height: 300px;
+}
+.dropdown-list-item{
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 1rem 0 1rem 1.5rem;
+    cursor: pointer;
+    transition: margin-left 0.2s ease, color 0.2s ease;
+}
+.dropdown-list-item:hover{
+    margin-left: 0.5rem;
+    color: #041dfa;
+}
+.search-box{
+    display: flex;
+    align-items: center;
+    padding-right: 1rem;
+    width: 100%;
+    color: #041dfa;
+}
+.search-box input{
+    padding: 1rem;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #041dfa;
+    border: 0;
+    outline: 0 ;
+}
+.search-box i{
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+.search-box input::placeholder{
+    font-size: 1rem;
+    font-weight: 500;
+    color: #041dfa;
+}
